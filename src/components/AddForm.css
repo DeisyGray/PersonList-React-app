@@ -1,0 +1,100 @@
+.container{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 1em;
+    border: 2px solid rgb(215, 215, 215);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;              /* ให้ห่อได้ */
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;                     /* เพิ่มช่องว่างเล็ก ๆ */
+    width: 100%;                  /* ให้ form เต็ม container */
+    box-sizing: border-box;
+}
+form input,
+form select {
+  flex: 1 1 150px; /* ยืดได้แต่มีขนาดขั้นต่ำ */
+  min-width: 120px;
+}
+
+form button {
+  flex: 0 0 auto; /* ปุ่มไม่ต้องยืด */
+}
+
+
+
+label{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    }
+
+input{
+    font-size: 18px;
+    padding: 7px;
+    border: 2px solid rgb(202, 202, 202);
+    border-radius: 10px;
+    flex-grow: 1;
+}
+input:focus{
+    outline: none;
+}
+
+select{
+    font-size: 18px;
+    padding: 7px;
+    margin: 10px;
+    border: 2px solid rgb(215, 215, 215);
+    border-radius: 10px;
+    flex-grow: 1;
+}
+
+.btn-save {
+  background-color: #614caf;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px auto;
+  cursor: pointer;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .btn-save {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+
+.btn-save:disabled{
+    background-color: #b8b8b8;
+}
+
+/* ปกติ (จอใหญ่) */
+.card {
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+/* จอเล็ก (มือถือ) */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    font-size: 14px;
+    padding: 8px;
+  }
+}

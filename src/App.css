@@ -1,0 +1,30 @@
+.App{
+  text-align: center;
+  padding: 0px;
+}
+
+main{
+  max-width: 1280px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 15px;
+};
+
+
+.light, .dark {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #292929;
+  transition: all 0.5s;
+}
+
+.dark {
+  background-color: #292929;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+

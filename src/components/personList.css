@@ -1,0 +1,29 @@
+.container{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 4px solid black;
+    border-radius: 10px;
+}  
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px
+}
+
+li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 20px 5px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}

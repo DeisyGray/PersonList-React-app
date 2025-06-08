@@ -1,0 +1,41 @@
+/* nav{
+    padding: 0px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    border-bottom: 2px solid #000000;
+    max-width: 1200px;
+    height: 70px;
+} */
+
+nav {
+  padding: 0 1rem;              /* เพิ่ม padding ซ้าย/ขวา */
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;              /* ใช้หน่วย responsive */
+  max-width: 1200px;
+  height: 70px;
+  width: 100%;                  /* ให้ยืดเต็มจอก่อนจะถึง max-width */
+  box-sizing: border-box;      /* ป้องกัน padding ดันเกินขอบ */
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    gap: 10px; /* ระยะห่างระหว่างไอเท็มเมื่อซ้อนกัน */
+    padding: 1rem;
+  }
+
+  nav h1 {
+    font-size: 1.2rem;
+  }
+}
+
+span{
+    cursor: pointer;
+}
